@@ -1,0 +1,24 @@
+body{
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+div#container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+div#container div#principal{
+    border: 1px solid black;
+    width: 50%;
+    height: auto;
+}
+
+div#container div#principal h2{
+    font-weight: normal;
+}

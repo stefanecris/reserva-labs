@@ -1,0 +1,234 @@
+body{
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+div#container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+div#container div#principal{
+    width: 35%;
+    height: 500px;
+    padding: 20px;
+    border-radius: 2%;
+    border: 2px solid green;
+    position: relative;
+}
+
+div#container div#principal img#logoIf{
+    width: 40%;
+}
+
+div#container div#principal h2{
+    font-weight: normal;
+}
+
+div.disposicaoLateralInput{
+    display: flex;
+    flex-direction: row;
+}
+
+div.campoForm{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+div#campoNome, div#mensagemErroValidaNome{
+    width: 65%;
+    margin-right: 6px;
+}
+
+div#campoId, div#mensagemErroValidaId{
+    width: 35%;
+}
+
+div#alinharMensagemSucesso{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+div#alinharMensagemSucesso div#mensagemSucesso{
+    display: none;
+    background-color: #77dd77;
+    color: black;
+    font-size: 12pt;
+    width: 300px;
+    box-shadow: 3px 3px 3px 2px #dfdede;
+    padding: 5px;
+    margin-bottom: 18px;
+}
+
+div#mensagemSucesso a{
+    color: green;
+    font-weight: bold;
+}
+
+div#mensagemErroValidaNome, div#mensagemErroValidaId, div#mensagemErroValidaEmail, div#mensagemErroValidaSenha, div#mensagemErroRadio, 
+div#mensagemErroValidaAreaAtuacao, div#mensagemErroValidaCurso, div#mensagemErroValidaPeriodo, div#mensagemErroValidaDepartamentos{
+    font-size: 9pt;
+    color: red;
+    margin-top: 2px;
+    height: 16px;
+    
+}
+
+div#campoSenha, div#campoCurso, div#mensagemErroValidaCurso{
+    width: 50%;
+    margin-right: 6px;
+}
+
+div#campoConfirmarSenha, div#campoPeriodo, div#mensagemErroValidaPeriodo{
+    width: 50%;
+}
+
+input.inputAnimacao{
+    color: black;
+    font-size: 14px;
+    width: 100%;
+    padding: 20px 5px 5px;
+    background-color: #f5f3f3;
+    border: none;
+}
+
+label.labelAnimacao{
+    color: black;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+}
+
+span{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+label.labelAnimacao::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid green;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+
+input.inputAnimacao:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+input.inputAnimacao:focus + label.labelAnimacao span, 
+input.inputAnimacao:valid + label.labelAnimacao span{
+    transform: translateY(-150%);
+    font-size: 10px;
+    bottom: 10px;
+    color: green;
+}
+
+input.inputAnimacao:focus + label.labelAnimacao::after, 
+input.inputAnimacao:valid + label.labelAnimacao::after{
+    transform: translateX(0%);
+}
+
+label.personalizaRadio{
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 15px;
+    font-size: 13px;
+}
+
+div.radio{
+    margin-top: 20px;
+}
+
+input[type=radio]{
+    display: none;
+}
+
+label.personalizaRadio:before{
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius:50%;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: #d3d3d3;
+    box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+}
+
+input[type=radio]:checked + label.personalizaRadio:before{
+    content: "\2022";
+    border: 1px solid green;
+    color: green;
+    font-size: 30px;
+    text-align: center;
+    line-height: 18px;
+}
+
+div#camposAluno, div#camposProfessor, div#camposServidor{
+    display: none;
+}
+
+.fa-eye, .fa-eye-slash{
+    position: absolute;
+    top: 14px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.fa-eye-slash{
+    display: none;
+}
+
+div#botoes{
+    width: 92%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 20px;
+}
+
+button{
+    background-color: green;
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button#btnCadastrar{
+    width: 50%;
+    margin-right: 6px;
+}
+
+button#btnLimpar{
+    width: 50%;
+}
+

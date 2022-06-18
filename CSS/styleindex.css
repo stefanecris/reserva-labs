@@ -1,0 +1,109 @@
+body{
+    overflow: hidden;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px solid green;
+    background-color: white;
+    height: 130px;   
+}
+
+.logoheader{
+    height: 100px;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-bottom: 1%;
+}
+
+.slogan{
+    text-align: center;
+    font-size: 50px;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    font-size: 100%;
+    text-align: center;
+    color: green;
+}
+
+.cardlogin{
+    width: 25%;
+    height: auto;
+    border: 2px solid green;
+    border-radius: 5%;
+    box-shadow: 3px 3px 3px 2px green;
+}
+
+.logo{
+    padding: 2%;
+    width: 95%;
+    display: block;
+}
+
+.login{
+    padding: 8%;
+    position: relative;
+    height: 245px;
+}
+
+#ocultarSenha{
+    width: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+div#checkbox{
+    font-size: 11pt;
+    position: absolute;
+    left: 22px;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+input[type=number] { 
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+div#botoesLogin{
+    width: 85%;
+    position: absolute;
+    bottom: 10px;
+}
+
+div#botoesLogin button{
+    width: 100%;
+}
+
+div#botoesLogin button#btnLogin{
+    margin-bottom: 8px;
+}
+
+div#alinharMensagemErroLogin{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+div#mensagemErroLogin{
+    display: none;
+    color: red;
+}

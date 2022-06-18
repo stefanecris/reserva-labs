@@ -1,0 +1,111 @@
+body{
+    font-family: sans-serif;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px solid green;
+    background-color: white;
+    height: 130px;   
+}
+
+.logoheader{
+    height: 100px;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-bottom: 1%;
+}
+
+.slogan{
+    margin: 3%;
+    text-align: center;
+    font-size: 50px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8%;
+}
+
+h2{
+    font-size: 100%;
+    color: green;
+}
+
+.cardlogin{
+    width: 25%;
+    height: 35%;
+    border: 2px solid green;
+    border-radius: 5%;
+    box-shadow: 3px 3px 3px 2px green;
+}
+
+.logo{
+    padding: 2%;
+    width: 95%;
+    display: block;
+}
+
+.login{
+    padding: 10%;
+    text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+input[type=number] { 
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+#user{
+    height: 25px;
+    width: auto;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: none;
+}
+
+div#botoesLogin{
+    /* border: 1px solid red; */
+    width: 85%;
+    position: absolute;
+    bottom: 10px;
+}
+
+div#botoesLogin button{
+    width: 100%;
+}
+
+div#botoesLogin button#btnLogin{
+    margin-bottom: 8px;
+}
+
+#senha{
+    height: 25px;
+    width: auto;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.botaologin{
+    border-radius: 4px;
+    box-shadow: none;
+    background-color: white;   
+    border: 1px solid black; 
+}
+
+footer{
+    background-color: rgb(255, 210, 192);
+}

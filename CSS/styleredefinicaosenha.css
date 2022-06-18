@@ -1,0 +1,28 @@
+div#container div#principal{
+    width: 24%;
+    height: 420px;
+}
+
+div#campoId, div#campoSenha, div#campoConfirmarSenha, div#mensagemErroValidaId, #div#mensagemErroValidaSenha{
+    width: 100%;
+}
+
+input#checkboxMostrarSenha{
+    margin-top: 6px;
+}
+
+a{
+    color: green;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+
+div#botoes{
+    width: 46%;
+    right: 20px;
+}
+
+div#botoes button{
+    width: 100%;
+}
